@@ -1,0 +1,54 @@
+/* 移除 Tailwind 指令，因为我们使用 CDN */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* 自定义全局样式 */
+:root {
+  --primary-color: #3366FF;
+  --secondary-color: #6C757D;
+  --success-color: #28A745;
+  --info-color: #17A2B8;
+  --warning-color: #FFC107;
+  --danger-color: #DC3545;
+  --light-color: #F8F9FA;
+  --dark-color: #343A40;
+}
+
+/* 自定义组件样式 */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #4775FF;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #7094FF;
+}
