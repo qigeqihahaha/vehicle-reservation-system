@@ -102,10 +102,10 @@ const authStore = useAuthStore()
 
 const loading = ref(false)
 
-// フォームデータ
+// フォームデータ（デフォルト値を設定）
 const formValue = reactive({
-  email: '',
-  password: '',
+  email: 'test@example.com',
+  password: 'password',
   remember: false
 })
 
